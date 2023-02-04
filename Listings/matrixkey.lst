@@ -1,0 +1,203 @@
+C51 COMPILER V9.54   MATRIXKEY                                                             01/30/2023 21:22:10 PAGE 1   
+
+
+C51 COMPILER V9.54, COMPILATION OF MODULE MATRIXKEY
+OBJECT MODULE PLACED IN .\Objects\matrixkey.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE matrixkey.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings
+                    -\matrixkey.lst) TABS(2) OBJECT(.\Objects\matrixkey.obj)
+
+line level    source
+
+   1          #include<REGX52.H>
+   2          #include"delay.h"
+   3          unsigned char Matrix()
+   4          {
+   5   1          unsigned char keynumber=0;
+   6   1      //逐列扫描
+   7   1      //第一列S1按键
+   8   1      P1=0xff;
+   9   1      P1_3=0;
+  10   1      if (!P1_7)
+  11   1      {
+  12   2          Delay(20);
+  13   2          while (/* condition */!P1_7);
+  14   2          Delay(20);
+  15   2          keynumber=1;
+  16   2          /* code */
+  17   2      }
+  18   1      //第一列S5按键
+  19   1      if (!P1_6)
+  20   1      {
+  21   2          Delay(20);
+  22   2          while (/* condition */!P1_6);
+  23   2          Delay(20);
+  24   2          keynumber=5;
+  25   2          /* code */
+  26   2      }
+  27   1      //第一列S9按键
+  28   1      
+  29   1      if (!P1_5)
+  30   1      {
+  31   2          Delay(20);
+  32   2          while (/* condition */!P1_5);
+  33   2          Delay(20);
+  34   2          keynumber=9;
+  35   2          /* code */
+  36   2      }
+  37   1      //第一列S13按键
+  38   1      
+  39   1      if (!P1_4)
+  40   1      {
+  41   2          Delay(20);
+  42   2          while (/* condition */!P1_4);
+  43   2          Delay(20);
+  44   2          keynumber=13;
+  45   2          /* code */
+  46   2      }
+  47   1      
+  48   1      //第二列S2按键
+  49   1      P1=0xff;
+  50   1      P1_2=0;
+  51   1      if (!P1_7)
+  52   1      {
+  53   2          Delay(20);
+  54   2          while (/* condition */!P1_7);
+C51 COMPILER V9.54   MATRIXKEY                                                             01/30/2023 21:22:10 PAGE 2   
+
+  55   2          Delay(20);
+  56   2          keynumber=2;
+  57   2          /* code */
+  58   2      }
+  59   1      //第二列S6按键
+  60   1      
+  61   1      if (!P1_6)
+  62   1      {
+  63   2          Delay(20);
+  64   2          while (/* condition */!P1_6);
+  65   2          Delay(20);
+  66   2          keynumber=6;
+  67   2          /* code */
+  68   2      }
+  69   1      //第二列S10按键
+  70   1      
+  71   1      if (!P1_5)
+  72   1      {
+  73   2          Delay(20);
+  74   2          while (/* condition */!P1_5);
+  75   2          Delay(20);
+  76   2          keynumber=10;
+  77   2          /* code */
+  78   2      }
+  79   1      //第二列S14按键
+  80   1      
+  81   1      if (!P1_4)
+  82   1      {
+  83   2          Delay(20);
+  84   2          while (/* condition */!P1_4);
+  85   2          Delay(20);
+  86   2          keynumber=14;
+  87   2          /* code */
+  88   2      }
+  89   1      //第三列S3按键
+  90   1      P1=0xff;
+  91   1      P1_1=0;
+  92   1      if (!P1_7)
+  93   1      {
+  94   2          Delay(20);
+  95   2          while (/* condition */!P1_7);
+  96   2          Delay(20);
+  97   2          keynumber=3;
+  98   2          /* code */
+  99   2      }
+ 100   1      //第三列S7按键
+ 101   1      
+ 102   1      if (!P1_6)
+ 103   1      {
+ 104   2          Delay(20);
+ 105   2          while (/* condition */!P1_6);
+ 106   2          Delay(20);
+ 107   2          keynumber=7;
+ 108   2          /* code */
+ 109   2      }
+ 110   1      //第三列S11按键
+ 111   1      
+ 112   1      if (!P1_5)
+ 113   1      {
+ 114   2          Delay(20);
+ 115   2          while (/* condition */!P1_5);
+ 116   2          Delay(20);
+C51 COMPILER V9.54   MATRIXKEY                                                             01/30/2023 21:22:10 PAGE 3   
+
+ 117   2          keynumber=11;
+ 118   2          /* code */
+ 119   2      }
+ 120   1      //第三列S15按键
+ 121   1      
+ 122   1      if (!P1_4)
+ 123   1      {
+ 124   2          Delay(20);
+ 125   2          while (/* condition */!P1_4);
+ 126   2          Delay(20);
+ 127   2          keynumber=15;
+ 128   2          /* code */
+ 129   2      }
+ 130   1      //第四列S4按键
+ 131   1      P1=0xff;
+ 132   1      P1_0=0;
+ 133   1      if (!P1_7)
+ 134   1      {
+ 135   2          Delay(20);
+ 136   2          while (/* condition */!P1_7);
+ 137   2          Delay(20);
+ 138   2          keynumber=4;
+ 139   2          /* code */
+ 140   2      }
+ 141   1      //第四列S8按键
+ 142   1      
+ 143   1      if (!P1_6)
+ 144   1      {
+ 145   2          Delay(20);
+ 146   2          while (/* condition */!P1_6);
+ 147   2          Delay(20);
+ 148   2          keynumber=8;
+ 149   2          /* code */
+ 150   2      }
+ 151   1      //第四列S12按键
+ 152   1      
+ 153   1      if (!P1_5)
+ 154   1      {
+ 155   2          Delay(20);
+ 156   2          while (/* condition */!P1_5);
+ 157   2          Delay(20);
+ 158   2          keynumber=12;
+ 159   2          /* code */
+ 160   2      }
+ 161   1      //第四列S16按键
+ 162   1      
+ 163   1      if (!P1_4)
+ 164   1      {
+ 165   2          Delay(20);
+ 166   2          while (/* condition */!P1_4);
+ 167   2          Delay(20);
+ 168   2          keynumber=16;
+ 169   2          /* code */
+ 170   2      }
+ 171   1      
+ 172   1          return keynumber;
+ 173   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    393    ----
+   CONSTANT SIZE    =   ----    ----
+C51 COMPILER V9.54   MATRIXKEY                                                             01/30/2023 21:22:10 PAGE 4   
+
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       1
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
